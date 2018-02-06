@@ -10,6 +10,18 @@
 			[":localhost 001 testbot :Welcome to the Internet Relay Chat Network testbot\r\n", "Received welcome message"]
 		]
 	},
+	"flood": {
+		"sent": [
+			["PRIVMSG test :foo bar", "Flood message 1"],
+			["PRIVMSG test :foo bar2", "Flood message 2"],
+			["PRIVMSG test :foo bar3", "Flood message 3"],
+			["PRIVMSG test :foo bar4", "Flood message 4"],
+			["PRIVMSG test :foo bar5", "Flood message 5"],
+			["PRIVMSG test :foo bar6", "Flood message 5"],
+			["PRIVMSG test :foo bar7", "Flood message 7"]
+		],
+		"messages": ["foo bar", "foo bar2", "foo bar3", "foo bar4", "foo bar5", "foo bar6", "foo bar7"]
+	},
 	"double-CRLF": {
 		"sent": [
 			["NICK testbot", "Client sent NICK message"],
